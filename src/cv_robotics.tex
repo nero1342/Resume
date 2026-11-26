@@ -1,0 +1,148 @@
+% !TEX TS-program = luatex
+% E-Ro Nguyen -- CV tailored for Robotics Research Intern (1 page, ATS-friendly)
+% Based on yaac-another-awesome-cv (CC BY-SA 4.0)
+
+\documentclass[localFont,alternative]{yaac-another-awesome-cv}
+\usepackage[en-US]{datetime2}
+
+\name{E-Ro}{Nguyen}
+\tagline{PhD Candidate in CS · Robot Learning \& Vision-Language Models}
+
+\socialinfo{
+    \email{eronguyen@cs.stonybrook.edu}
+    \github{nero1342}
+    \linkedin{nero1342}
+    \scholar{https://scholar.google.com/citations?user=zcHQfrIAAAAJ&hl=en}
+    \\
+    \website{eronguyen.me}
+    \\
+    \researchinterests{Robot learning and control, language-conditioned manipulation, diffusion policies, vision-language models}
+}
+
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage[normalem]{ulem}
+
+% Tighten margins and publication spacing to keep the CV to one page
+\geometry{top=1.1cm, bottom=1.1cm, left=1.4cm, right=1.4cm}
+\renewcommand\publication[6]{%
+\begin{minipage}[t]{\dimexpr(\linewidth) - 1.5em}
+   \textbf{#1} {#2} \\
+   {#3} {\hfill \small{\lbrack\textbf{{#4}}\rbrack}}
+  \end{minipage}
+  \\*
+  \vspace{1.6mm}
+}
+
+\begin{document}
+    \makecvheader
+    \DTMlangsetup{showdayofmonth=false}
+    \makecvfooter
+        {\textsc{\selectlanguage{english}\today}}
+        {\textsc{E-Ro Nguyen}}
+        {\thepage}
+
+    %% ---------------- Education ----------------
+    \sectionTitle{Education}{}
+    \begin{educations}
+    \education
+        {Stony Brook University}   {New York, USA}
+        {Ph.D. in Computer Science, Advisors: Profs. \href{http://michaelryoo.com/}{Michael Ryoo} and \href{https://scholar.google.com/citations?user=BxbKTYkAAAAJ}{Dimitris Samaras}} {Aug 2024 - Present}
+    \emptySeparator
+    \education
+        {University of Science - VNUHCM}   {Ho Chi Minh City, Vietnam}
+        {B.Sc. in Computer Science} {2018 - 2022}
+    \end{educations}
+    \vspace{-3mm}
+
+    %% ---------------- Experience (robotics first) ----------------
+    \sectionTitle{Research Experience}{}
+    \begin{experiences}
+    \researchexperience
+        {Stony Brook University, NY, USA}
+        {Graduate Research Assistant} {Aug 2024 - Present}
+        {
+            - Pixel-motion diffusion for language-conditioned robotic manipulation, using dense pixel motion as a universal action representation for robot control (CVPR'26, first author) \\
+            - Multi-modal vision-language models for referring expression segmentation and counting (ECCV'26, CVPRW'26, WACV'25) \\
+        }
+    \emptySeparator
+    \researchexperience
+        {Adobe Research, CA, USA}
+        {Research Intern} {May 2026 - Nov 2026}
+        {
+            - Multi-stream fusion for human motion generation.
+        }
+    \emptySeparator
+    \researchexperience
+        {University of Science - VNUHCM, Vietnam}
+        {Research Assistant} {Feb 2022 - Sep 2023}
+        {
+            - Explainability and flexibility for interactive video retrieval systems (MMM'23, ICMR'22) \\
+            - Vision-language modeling for referring video object segmentation (CVPRW'22) \\
+        }
+    \emptySeparator
+    \researchexperience
+        {Qualcomm AI Research, HCMC, Vietnam}
+        {Research Intern} {May 2021 - Feb 2022}
+        {
+            - Interpretability and robustness for semi-supervised video object segmentation.
+        }
+    \end{experiences}
+
+    %% ---------------- Selected Publications (robotics first) ----------------
+    \sectionTitle{Selected Publications\hfill \small{(* = Equal Contribution)}}{}
+    \begin{publications}
+    \publication
+        {Pixel Motion Diffusion is What We Need for Robot Control}{~[\href{https://eronguyen.me/DAWN}{\small{\linkSymbol}}]}
+        {\underline{\smash{E-Ro Nguyen}}, Yichi Zhang, Kanchana Ranasinghe, Xiang Li, Michael Ryoo}
+        {CVPR 2026} {} {C.2}
+
+    \publication
+        {SMILE: Smooth Motion for Improved Long-Horizon VLA Execution}{~[\href{https://arxiv.org/abs/2608.29432}{\small{\linkSymbol}}]}
+        {Jongwoo Park, \underline{\smash{E-Ro Nguyen}}, Kanchana Ranasinghe, Cristina Mata, Xiang Li, Michael S. Ryoo}
+        {arXiv 2026 (submitted to IEEE RA-L)} {} {C.2}
+
+    \publication
+        {Pixel Motion as Universal Representation for Robot Control}{~[\href{https://arxiv.org/abs/2505.07817}{\small{\linkSymbol}}]}
+        {Kanchana Ranasinghe, Xiang Li, \underline{\smash{E-Ro Nguyen}}, Cristina Mata, Jongwoo Park, Michael S. Ryoo}
+        {arXiv} {} {C.2}
+
+    \publication
+        {Phrase-Instance Alignment for Generalized Referring Segmentation}{~[\href{https://eronguyen.me/InstAlign/}{\small{\linkSymbol}}]}
+        {\underline{\smash{E-Ro Nguyen}}, Hieu Le, Dimitris Samaras, Michael Ryoo}
+        {CVPR 2026 Workshops} {} {C.2}
+
+    \publication
+        {Visual Contrast Is a Strong Counting Signal}{~[\href{https://arxiv.org/abs/2505.22850}{\small{\linkSymbol}}]}
+        {Kostas Triaridis, Panagiotis Kaliosis, \underline{\smash{E-Ro Nguyen}}, Jingyi Xu, Hieu Le, Dimitris Samaras}
+        {ECCV 2026} {} {C.2}
+
+    \publication
+        {Vision-Aware Text Features in Referring Image Segmentation: \\ From Object Understanding to Context Understanding}{~[\href{https://vatex.hkustvgd.com/}{\small{\linkSymbol}}]}
+        {\underline{\smash{E-Ro Nguyen*}}, Truong-Hai Nguyen*, Tuan-Anh Vu, Binh-Son Hua, Minh-Triet Tran, Sai-Kit Yeung}
+        {WACV 2025} {} {C.1}
+    \end{publications}
+    \vspace{-10mm}
+
+    %% ---------------- Skills ----------------
+    \sectionTitle{Skills}{}
+    \begin{courses}
+        \course
+        {\textbf{Programming Languages}: Python, C/C++ \\
+         \textbf{Frameworks/Library}: PyTorch, OpenCV, Numpy, FastAPI, Flask, Gradio \\
+         \textbf{Developer Tools}: Git/Github, Docker, Jupyter Notebook \\
+         \textbf{Research Areas}: Robot Learning, Diffusion Models, Vision-Language Models, Video Understanding, Segmentation}
+    \end{courses}
+    \vspace{-3mm}
+
+    %% ---------------- Selected Awards ----------------
+    \sectionTitle{Selected Awards}{}
+    \begin{talks}
+        \award {\textbf{Champion} at SBU ICPC Team Selection 2026}{}{}{\hfill 2026}
+        \award {\textbf{John Hennessy Fellowship} at Stony Brook University}{}{}{\hfill 2024}
+        \award {\textbf{Top 300} at Meta Hacker Cup 2024}{}{}{\hfill 2024}
+        \award {\textbf{Champion} at The 2021 ICPC National Vietnam Contest}{}{}{\hfill 2022}
+    \end{talks}
+    \vspace{-3mm}
+
+\end{document}

@@ -678,7 +678,7 @@
 
 \newcommand*\referee[4]{
   \begin{minipage}[t]{\dimexpr(\linewidth) - 1.5em}
-    \textbf{#1} \hfill \textit{#3\smallskip \vspace{-0.8mm}\\
+    \textbf{#1} \hfill \textit{#3}\smallskip \vspace{-0.8mm}\\
     % \textit{#2}\\
     \vspace{3mm}
   \end{minipage}

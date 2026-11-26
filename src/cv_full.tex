@@ -1,0 +1,53 @@
+% !TEX TS-program = luatex
+% E-Ro Nguyen -- Full CV (lists everything)
+% Based on yaac-another-awesome-cv (CC BY-SA 4.0)
+
+\documentclass[localFont,alternative]{yaac-another-awesome-cv}
+\usepackage[en-US]{datetime2}
+
+\name{E-Ro}{Nguyen}
+\tagline{PhD Candidate in Computer Science · Stony Brook University}
+
+\socialinfo{
+    \email{eronguyen@cs.stonybrook.edu}
+    \github{nero1342}
+    \linkedin{nero1342}
+    \scholar{https://scholar.google.com/citations?user=zcHQfrIAAAAJ&hl=en}
+    \\
+    \website{eronguyen.me}
+    \\
+    \researchinterests{Image/video understanding, vision-language alignment, robotics}
+}
+
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage[normalem]{ulem}
+
+\begin{document}
+    \makecvheader
+    \DTMlangsetup{showdayofmonth=false}
+    \makecvfooter
+        {\textsc{\selectlanguage{english}\today}}
+        {\textsc{E-Ro Nguyen}}
+        {\thepage}
+
+    \input{sections/0_education}
+    \input{sections/1_experience}
+    \input{sections/3_selected_publications}
+    \input{sections/2_publications}
+
+    % Skills (inlined to avoid the itemize/\course clash in sections/opensource.tex)
+    \sectionTitle{Skills}{}
+    \begin{courses}
+        \course
+        {\textbf{Programming Languages}: Python, C/C++ \\
+         \textbf{Frameworks/Library}: PyTorch, OpenCV, Numpy, FastAPI, Flask, Gradio \\
+         \textbf{Developer Tools}: Git/Github, Docker, Jupyter Notebook}
+    \end{courses}
+    \vspace{-3mm}
+    \input{sections/2_selected_awards}
+    \input{sections/awards}
+    \input{sections/service}
+    \input{sections/references}
+
+\end{document}
