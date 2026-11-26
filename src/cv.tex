@@ -1,0 +1,69 @@
+% !TEX TS-program = luatex
+% Awesome Source CV LaTeX Template
+%
+% Author:
+% Christophe Roger (Darwiin)
+% 
+% Modified by:
+% Sebastin Santy
+% This template has been downloaded from:
+% https://github.com/SebastinSanty/Just-Another-Research-CV
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+
+\documentclass[localFont,alternative]{yaac-another-awesome-cv}
+\usepackage[en-US]{datetime2}
+
+\name{E-Ro}{Nguyen}
+% \tagline{AI Center Fellow, Microsoft Research}
+% \photo{2cm}{uwseal}
+% \socialinfo{
+%     \website{eronguyen.me}
+% 	\email{eronguyen@cs.stonybrook.edu}
+% 	\github{nero1342}
+%         \linkedin{nero1342}
+% 	\scholar{https://scholar.google.com/citations?user=zcHQfrIAAAAJ&hl=en}
+% 	% \smartphone{+1-516-743-6665}
+% 	% \address{13, Microsoft Research, \#9 VIGYAN, Lavelle Road, Bangalore, KA, India 560001}
+%         \vspace{-3mm}
+% }
+
+\socialinfo{
+    \email{eronguyen@cs.stonybrook.edu}
+    \github{nero1342}
+    \linkedin{nero1342}
+    \scholar{https://scholar.google.com/citations?user=zcHQfrIAAAAJ&hl=en}
+    \\
+    \website{eronguyen.me}
+    \\
+    \researchinterests{Image/video understanding, vision-language alignment, robotics}
+}
+
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage[normalem]{ulem}
+
+\begin{document}
+	\makecvheader
+    \DTMlangsetup{showdayofmonth=false}
+	\makecvfooter
+		{\textsc{\selectlanguage{english}\today}}
+		{\textsc{E-Ro Nguyen}}
+		{\thepage}
+    % \input{sections/headline}
+    \input{sections/0_education}
+    \input{sections/1_experience}
+    \input{sections/3_selected_publications}
+    \input{sections/2_selected_awards}
+    \input{sections/service}
+    % \newpage
+    % \input{sections/2_publications}
+    % \input{sections/awards}
+    % \input{sections/opensource}
+    % \input{sections/3_projects}
+    % \input{sections/activity}
+    % \input{sections/references} 
+% \input{sections/talks}
+% \input{sections/teaching}
+
+\end{document}
